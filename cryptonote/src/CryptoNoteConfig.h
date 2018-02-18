@@ -28,16 +28,16 @@ namespace parameters {
 const uint32_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 115; // addresses start with "i"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 334; // addresses start with "i"
 const uint32_t CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 
 // MONEY_SUPPLY - total number coins to be generated
-const uint64_t MONEY_SUPPLY									 = UINT64_C(10000000000000000);
-const uint64_t FINAL_SUBSIDY_PER_MINUTE						 = UINT64_C(200000000);
-const unsigned EMISSION_SPEED_FACTOR                         = 22;
+const uint64_t MONEY_SUPPLY				     = UINT64_C(50000000000000000);
+const uint64_t FINAL_SUBSIDY_PER_MINUTE			     = UINT64_C(200000000);
+const unsigned EMISSION_SPEED_FACTOR                         = 20;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
@@ -46,25 +46,25 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2  = 1000000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 1000000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
+const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 10;
 const uint64_t MINIMUM_FEE                                   = UINT64_C(100000);    // pow(10, 5)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(100000);    // pow(10, 5)
 
-const uint64_t DIFFICULTY_TARGET                             = 90; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 const size_t   DIFFICULTY_WINDOW                             = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; // blocks
 const size_t   DIFFICULTY_CUT                                = 60;  // timestamps to cut after sorting
 const size_t   DIFFICULTY_LAG                                = 15;
 static_assert(2 * DIFFICULTY_CUT <= DIFFICULTY_WINDOW - 2, "Bad DIFFICULTY_WINDOW or DIFFICULTY_CUT");
 
-const size_t  DIFFICULTY_BLOCKS_V2							 = 17;
-const size_t  DIFFICULTY_CUT_V2								 = 6;
-const size_t  DIFFICULTY_WINDOW_V2							 = DIFFICULTY_BLOCKS_V2 + DIFFICULTY_CUT_V2 * 2;
+const size_t  DIFFICULTY_BLOCKS_V2				= 17;
+const size_t  DIFFICULTY_CUT_V2					= 60;
+const size_t  DIFFICULTY_WINDOW_V2				= DIFFICULTY_BLOCKS_V2 + DIFFICULTY_CUT_V2 * 2;
 
 const size_t   MAX_BLOCK_SIZE_INITIAL                        = 100 * 1024;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR         = 100 * 1024;
-const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR_V2		 = 35 * 100 * 1024;
-const size_t   MAX_BLOCK_SIZE_ALLOWED_EVERY_N_BLOCK			 = 5;
+const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_NUMERATOR_V2	     = 35 * 100 * 1024;
+const size_t   MAX_BLOCK_SIZE_ALLOWED_EVERY_N_BLOCK	     = 5;
 const uint64_t MAX_BLOCK_SIZE_GROWTH_SPEED_DENOMINATOR       = 365 * 24 * 60 * 60 / DIFFICULTY_TARGET;
 
 const uint64_t CRYPTONOTE_LOCKED_TX_ALLOWED_DELTA_BLOCKS     = 1;
@@ -80,7 +80,7 @@ const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO              = 4;
 
 const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 2000000;
 const uint32_t UPGRADE_HEIGHT_V2                             = 100;
-const uint32_t UPGRADE_HEIGHT_MAX_BLOCK_SIZE				 = 120;
+const uint32_t UPGRADE_HEIGHT_MAX_BLOCK_SIZE		     = 120;
 const uint32_t UPGRADE_HEIGHT_V3                             = 200;
 const unsigned UPGRADE_VOTING_THRESHOLD                      = 90;               // percent
 const uint32_t UPGRADE_VOTING_WINDOW                         = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;  // blocks
