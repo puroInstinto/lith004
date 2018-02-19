@@ -36,14 +36,14 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 
 // MONEY_SUPPLY - total number coins to be generated
 const uint64_t MONEY_SUPPLY				     = UINT64_C(50000000000000000);
-const uint64_t FINAL_SUBSIDY_PER_MINUTE			     = UINT64_C(200000000);
+const uint64_t FINAL_SUBSIDY_PER_MINUTE			     = UINT64_C(2000000000);
 const unsigned EMISSION_SPEED_FACTOR                         = 20;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 1000000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2  = 1000000;
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 1000000;
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 50000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 10;
@@ -78,10 +78,10 @@ const size_t   FUSION_TX_MAX_SIZE                            = CRYPTONOTE_BLOCK_
 const size_t   FUSION_TX_MIN_INPUT_COUNT                     = 12;
 const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO              = 4;
 
-const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 2000000;
-const uint32_t UPGRADE_HEIGHT_V2                             = 100;
-const uint32_t UPGRADE_HEIGHT_MAX_BLOCK_SIZE		     = 120;
-const uint32_t UPGRADE_HEIGHT_V3                             = 200;
+const uint32_t KEY_IMAGE_CHECKING_BLOCK_INDEX                = 2000000; //Cual es su uso?
+const uint32_t UPGRADE_HEIGHT_V2                             = 10000;
+const uint32_t UPGRADE_HEIGHT_MAX_BLOCK_SIZE		     = 15000;
+const uint32_t UPGRADE_HEIGHT_V3                             = 20000;
 const unsigned UPGRADE_VOTING_THRESHOLD                      = 90;               // percent
 const uint32_t UPGRADE_VOTING_WINDOW                         = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;  // blocks
 const uint32_t UPGRADE_WINDOW                                = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY;  // blocks
@@ -95,7 +95,7 @@ const char     P2P_NET_DATA_FILENAME[]                       = "p2pstate.bin";
 const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json";
 } // parameters
 
-const char     CRYPTONOTE_NAME[]                             = "lith004";
+const char     CRYPTONOTE_NAME[]                             = "lithiumbit";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
