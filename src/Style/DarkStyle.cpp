@@ -2,18 +2,18 @@
 //
 // This file is part of Bytecoin.
 //
-// LithiumBit is free software: you can redistribute it and/or modify
+//  is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// LithiumBit is distributed in the hope that it will be useful,
+//  is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with LithiumBit.  If not, see <http://www.gnu.org/licenses/>.
+// along with .  If not, see <http://www.gnu.org/licenses/>.
 
 #include "DarkStyle.h"
 
@@ -24,7 +24,7 @@ DarkStyle::DarkStyle() : Style("dark", "Dark") {
 }
 
 QString DarkStyle::statusBarBackgroundColor() const {
-  return "#2E2238";
+  return "#464646";
 }
 
 QString DarkStyle::statusBarFontColor() const {
@@ -32,11 +32,11 @@ QString DarkStyle::statusBarFontColor() const {
 }
 
 QString DarkStyle::headerBackgroundColor() const {
-  return "#2E2238";
+  return "#464646";
 }
 
 QString DarkStyle::headerBorderColor() const {
-  return "#2E2238";
+  return "#464646";
 }
 
 QString DarkStyle::addressFontColor() const {
@@ -48,15 +48,15 @@ QString DarkStyle::balanceFontColor() const {
 }
 
 QString DarkStyle::toolButtonBackgroundColorNormal() const {
-  return "#422e58";
+  return "#555555";
 }
 
 QString DarkStyle::toolButtonBackgroundColorHover() const {
-  return "#533a70";
+  return "#666666";
 }
 
 QString DarkStyle::toolButtonBackgroundColorPressed() const {
-  return "#342347";
+  return "#2e2238";
 }
 
 QString DarkStyle::toolButtonFontColorNormal() const {
@@ -68,7 +68,7 @@ QString DarkStyle::toolButtonFontColorDisabled() const {
 }
 
 QString DarkStyle::toolBarBorderColor() const {
-  return "#422e58";
+  return "#555555";
 }
 
 QString DarkStyle::getWalletSyncGifFile() const {

@@ -2,18 +2,18 @@
 //
 // This file is part of Bytecoin.
 //
-// LithiumBit is free software: you can redistribute it and/or modify
+//  is free software: you can redistribute it and/or modify
 // it under the terms of the GNU Lesser General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
-// LithiumBit is distributed in the hope that it will be useful,
+//  is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with LithiumBit.  If not, see <http://www.gnu.org/licenses/>.
+// along with .  If not, see <http://www.gnu.org/licenses/>.
 
 #include <QIcon>
 
@@ -133,11 +133,11 @@ QString Style::glassColor() const {
 
 QIcon Style::getSystemTrayIcon() const {
 #ifdef Q_OS_MAC
-  return QIcon(":images/lithiumbit_mac");
+  return QIcon(":images/_mac");
 #elif defined(Q_OS_LINUX)
-  return QIcon(":images/lithiumbit_lin");
+  return QIcon(":images/_lin");
 #elif defined(Q_OS_WIN)
-  return QIcon(":images/lithiumbit_win");
+  return QIcon(":images/_win");
 #endif
 }
 
