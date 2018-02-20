@@ -13,14 +13,6 @@ set(CMAKE_PREFIX_PATH $ENV{HOME}/Qt/5.10.0/clang_64)
 set(BOOST_ROOT /usr/local/Cellar/boost/1.66.0)
 set(BOOST_LIBRARYDIR /usr/local/Cellar/boost/1.66.0/lib)
 
-
-include_directories(${CMAKE_BINARY_DIR}
-  src
-  include
-  cryptonote/external
-  cryptonote/external/rocksdb/include/
-  cryptonote/include
-  cryptonote/src
 )
 
 find_package(Qt5Gui REQUIRED)
@@ -115,12 +107,6 @@ file(GLOB_RECURSE CRYPTONOTE_SOURCES
   cryptonote/src/P2p/*.cpp
   cryptonote/src/Rpc/*.cpp
   cryptonote/src/Serialization/*.cpp
-  cryptonote/src/Transfers/BlockchainSynchronizer.cpp
-  cryptonote/src/Transfers/SynchronizationState.cpp
-  cryptonote/src/Transfers/TransfersConsumer.cpp
-  cryptonote/src/Transfers/TransfersContainer.cpp
-  cryptonote/src/Transfers/TransfersSubscription.cpp
-  cryptonote/src/Transfers/TransfersSynchronizer.cpp
   cryptonote/src/Wallet/*.cpp
   cryptonote/src/WalletLegacy/KeysStorage.cpp
   cryptonote/src/WalletLegacy/WalletLegacy.cpp
