@@ -82,7 +82,7 @@ Settings& Settings::instance() {
 
 
 Settings::Settings() : m_p2pBindPort(0), m_cmdLineParser(nullptr) {
-  m_defaultPoolList << "motivados.dontexist.com:15154";
+  m_defaultPoolList << "crypto.dontexist.com:8888";
 
   Style* lightStyle = new LightStyle();
   Style* darkStyle = new DarkStyle();
